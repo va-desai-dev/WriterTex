@@ -1,0 +1,99 @@
+//
+//  PaneBar.swift
+//  TypeNBash
+//
+//  The chrome shared by every pane header and footer. It owns sizing, padding,
+//  background and the hairline toward the content; it knows nothing about what
+//  sits inside it. Callers wire the items in directly, so a bar never has to
+//  branch on what kind of pane it is attached to.
+//
+
+import SwiftUI
+
+struct PaneBar<Content: View, Accessory: View>: View {
+    /// Row height every bar shares, so headers line up across split panes.
+    static var rowHeight: CGFloat { 34 }
+    /// Which side of the content the bar sits on; the divider faces the content.
+    let edge: VerticalEdge
+    let spacing: CGFloat?
+    let showsDivider: Bool
+    /// Drawn along the divider while non-nil; 0...1.
+    let progress: Double?
+    let content: Content
+    /// Secondary bars stacked under a header, such as a find bar or tab strip.
+    /// Each one draws its own trailing divider.
+    let accessory: Accessory
+
+    init(
+        edge: VerticalEdge = .top,
+        spacing: CGFloat? = 8,
+        showsDivider: Bool = true,
+        progress: Double? = nil,
+        @ViewBuilder content: () -> Content,
+        @ViewBuilder accessory: () -> Accessory
+    ) {
+        self.edge = edge
+        self.spacing = spacing
+        self.showsDivider = showsDivider
+        self.progress = progress
+        self.content = content()
+        self.accessory = accessory()
+    }
+
+    var body: some View {
+        VStack(spacing: 0) {
+            if edge == .bottom && showsDivider { Divider() }
+            HStack(alignment: .center, spacing: spacing) {
+                content
+            }
+            .padding(.horizontal, 10)
+            .frame(maxWidth: .infinity, minHeight: Self.rowHeight, alignment: .leading)
+            .overlay(alignment: .bottom) { progressLine }
+            if edge == .top && showsDivider { Divider() }
+            accessory
+        }
+        .background(AppTheme.shared.paneBackground)
+    }
+
+    @ViewBuilder
+    private var progressLine: some View {
+        if let progress {
+            GeometryReader { proxy in
+                Rectangle()
+                    .fill(Color.accentColor)
+                    .frame(width: proxy.size.width * max(0.05, progress))
+                    .animation(.easeOut(duration: 0.2), value: progress)
+            }
+            .frame(height: 2)
+            .offset(y: 1)
+        }
+    }
+}
+
+extension PaneBar where Accessory == EmptyView {
+    init(
+        edge: VerticalEdge = .top,
+        spacing: CGFloat? = 8,
+        showsDivider: Bool = true,
+        progress: Double? = nil,
+        @ViewBuilder content: () -> Content
+    ) {
+        self.init(edge: edge, spacing: spacing, showsDivider: showsDivider, progress: progress, content: content) { EmptyView() }
+    }
+}
+
+extension View {
+    /// Stacks a bar above or below the pane, the way the CSV grid frames its
+    /// header — not `safeAreaInset`, which floats the bar *over* the content.
+    /// SwiftUI stretches scroll views (`List`, an editor's `NSScrollView`)
+    /// under an inset so they can scroll beneath it, and with the gradient on
+    /// `paneBackground` is clear, so the rows showed straight through the bar.
+    /// Stacked, nothing is ever under the bar and a clear fill reads as solid.
+    func paneBar<Bar: View>(_ edge: VerticalEdge, @ViewBuilder bar: () -> Bar) -> some View {
+        VStack(spacing: 0) {
+            if edge == .top { bar() }
+            self.frame(maxHeight: .infinity)
+            if edge == .bottom { bar() }
+        }
+    }
+}

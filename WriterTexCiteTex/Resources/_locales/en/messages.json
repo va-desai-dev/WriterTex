@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "WriterTexCiteTex",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "Send citations from scholarly pages to the active .bib in WriterTex.",
+        "description": "Description of what the extension does."
+    }
+}
