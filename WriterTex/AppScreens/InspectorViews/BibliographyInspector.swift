@@ -157,12 +157,12 @@ struct BibliographyInspector: View {
                 Button("Copy BibTeX") { browser.copy(ids: browser.selection, in: library, source: true) }
                     .disabled(browser.selection.isEmpty)
                 Button("Remove Selected…", role: .destructive) { browser.pendingRemoval = browser.selection }
-                    .disabled(browser.selection.isEmpty)
-                    .labelStyle(.iconOnly)
-                    .menuIndicator(.hidden)
-                    .menuStyle(.button)
-                    .buttonStyle(.glassButton)
             }
+            .disabled(browser.selection.isEmpty)
+            .labelStyle(.iconOnly)
+            .menuIndicator(.hidden)
+            .menuStyle(.button)
+            .buttonStyle(.glassButton)
         }
     }
 
