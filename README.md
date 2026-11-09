@@ -1,17 +1,17 @@
 <div align="center">
   
-<h1 align="center">TypeNBash</h1>
+<h1 align="center">WriterTex</h1>
 
-<h3 align="center">A native Mac workspace for code, commands, and data.</h3>
+<h3 align="center">Scholarly Workspace</h3>
 
-<h4 align="center"><i>Research. Code. Build. Preview. Test. Analyze. Audit.</i></h4>
+<h4 align="center"><i>Research. Write. Analyze. Format. In One App.</i></h4>
 
 <p align="center">
-  <a href="#download"><strong>Download</strong></a> &nbsp;·&nbsp;
-  <a href="#workspace">Projects</a> &nbsp;·&nbsp;
+  <a href="#download"><strong>Direct Distribution Coming Soon</strong></a> &nbsp;·&nbsp;
+  <a href="#workspace">About</a> &nbsp;·&nbsp;
   <a href="#privacy">Privacy</a> &nbsp;·&nbsp;
   <a href="#feedback">Feedback</a> &nbsp;·&nbsp;
-  <a href="#acknowledgements">Acknowledgements</a> &nbsp;·&nbsp;
+  <a href="#acknowledgements">Licenses</a> &nbsp;·&nbsp;
 </p>
 
 <span align="center">
@@ -23,104 +23,78 @@
 
 ---
 
-TypeNBash brings a text editor, terminal, file browser, web browser for previews, citation management, and an analytics notebook into a single native macOS application. Move from a script to its output, from a CSV to an analysis, or from your Mac to a remote host without leaving your workspace. All the while, you can monitor telemetry and device performance from the gorgeous inspector.
+WriterTex brings you a native AppKit running rich text editor with formatting, highlighting, and tables with a twist! You also get a refined Safari integrated (through the CiteTex extension) reference manager for all your scholarly sources. Yes! You can cite as you write in the app itself. Oh and did I say you also get an easy and intuitive well refined for macOS inferential statistical tool? Just upload a CSV dataset and instantiate a new `.wrstatx` notebook for your analysis.
 
 <a id="download"></a>
 
-## Download & install
-
-[**Download TypeNBash for MacOS from the latest page.**](https://github.com/va-desai-dev/TypeNBash/releases/tag/v1.0.0-beta) If you’re viewing the repository home page, open **Releases** first.
-
-1. Open the downloaded disk image.
-2. Drag **TypeNBash.app** into **Applications**.
-3. Launch **TypeNBash** from Applications.
-
-| Compatibility | Requirement |
-| :--- | :--- |
-| Operating system | macOS **26 Tahoe or later** |
-| Mac | **Apple silicon or Intel** |
-| Native CSV analysis | No Python or R installation required |
-| Optional workflows | An SSH host for remote work; R to execute R scripts |
-
-<a id="workspace"></a>
-## Many Options, One Workspace
-
-<table>
-<tr>
-<td width="50%" valign="top">
-<h3>⌨️ Editor + terminal</h3>
-<p>Browse files, edit with syntax highlighting, and find or replace text. Keep a project console beside your editor and send selected code or the current <code># %%</code> cell to it.</p>
-</td>
-<td width="50%" valign="top">
-<h3>🌐 Local + SSH</h3>
-<p>Work on your Mac or connect to another host. Browse and edit remote files alongside a remote terminal, with saved connection profiles and key/agent or password authentication.</p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3>📂 Portable projects</h3>
-<p>Create a project, initialize an existing folder, or open a folder as it is. Managed project settings travel with the folder, keeping its name and output location together.</p>
-</td>
-<td width="50%" valign="top">
-<h3>⑂ Git Tools</h3>
-<p>Inspect saved changes, stage and unstage files, commit, fetch, and push in local projects. Connect a GitHub account for supported GitHub workflows.</p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3>📊 Quant Tools</h3>
-<p>Run statistical tests ranging from linear models, Chi-Squares, distribution analytics, descriptives, and mean comparisons through a simplified button-based interface or R & Python notebooks if you fancy it.</p>
-</td>
-<td width="50%" valign="top">
-<h3>📝 Research & Revise</h3>
-<p>Markdown? Embedded Markdown previews help you write long documents and manuscripts. Harness the power of the CiteTex extension to also retrieve citations from an open Safari tab straight to your BibTeX library. Simply run a pandoc or LaTeX script yourself to convert to a formatted manuscript.</p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3>📐 Telemetries</h3>
-<p>System views put processor, memory, storage, network, and process activity within reach while you work. Never leave your workspace to figure out why your system is running slowly.</p>
-</td>
-<td width="50%" valign="top">
-<h3>🤖 YOUR Agents</h3>
-<p>Secure, safe, and private. TypeNBash aims to embrace a future of agentic LLMs while giving users the agency to select their agents. Hook your BYOK LLM and let TypeNBash be the amazing harness.</p>
-</td>
-</tr>
-</table>
+## Direct Download Coming Soon!
 
 >[!CAUTION]
->TypeNBash requires a project workspace for accessing the notebook, GitHub, citation management, and agentic features. Home directory access lets you work on broader things; however, it lacks project-scoped features.
+>Keep an eye out on **Releases** for a DMG distribution. This is envisioned to be added very soon alongside the Mac App Store release in a few days!
+
+
+### Compatibility and Requirements
+| Compatibility | Requirement |
+| :--- | :--- |
+| Operating System | macOS **15 and above** |
+| Hardware | **Apple silicon or Intel** |
+| Native CSV analysis | No third party frameworks required. |
+
+<a id="workspace"></a>
+## Two Tasks, One App
+### WriterTex Manuscripts (`.wrtx`)
+#### KEEP YOUR REFERENCES TOGETHER
+1. Connect any BibTeX or BibJSON library that you're using with a reference manager (or indeed start a new one from WriterTex for your paper). 
+2. WriterTex supports easy import of libraries exported from Zotero, EndNote, and Mendeley. Let it sync any changes to your BibTeX done by another reference manager. 
+3. Get notified of duplicate entries anytime you add the same entry to your library. Choose whether to merge, keep both, or update to keep your workspace neat and tidy.
+4. Search Crossref for references or pull citations straight from Safari if you're reading a paper in Safari with CiteTex.
+
+#### WRITE WITH YOUR RESEARCH WITH COMFORT
+1. Write your paper using formatted text, headings, lists, and tables. 
+1. Keep a running word count and reference list as you go. 
+3. When you're ready to finalize your work, you can export to PDF or Word with options to change fonts, spacing, headings, page numbers, and citation style. 
+4. The same reference list will work across different papers and will be fully functional in your other research tools. 
+
+>[!NOTE]
+>1. APA is included with a range of other CSL citation styles available to import or download. 
+>2. For journals that have a particular format, you can import or edit a custom CSL style so your citations are exactly as they need to be.
+
+### StatTex Notebooks (`.wrstatx`)
+1. Import CSV data files into your analysis notebook and work through your analysis step by step. 
+2. Run **descriptive analyses**, **cross-tabulations** and conduct data mutations for broad data setup.
+4. Conduct snappy and verified inferential stats including **One-Way ANOVAs**, **Two-Way ANOVAs**, ***t*-Tests**, **Chi-Squares**, **Multivariate Linear Regressions**, and **Correlation Matrices**. 
+5. Mark missing values, create new variables, and recode existing ones via simple controls. 
+6. Built-in analyses run on your Mac without other apps or cryptic coding (like R). 
+7. Copy your analysis results into your manuscript or export the output as a new WriterTex document with editable tables. 
+8. Export your notebooks, tables, and manuscript as fully formatted Word docs, PDFs, or Markdown, which you can easily embed into your workflow via WriterTex.
 
 <a id="privacy"></a>
 
 ## Storage & Security
-*Managed* projects use small, project-relative files:
+Document Application architecture with full App Store compliant sandboxing:
+
 | File | Contains |
 | :-- | :-- |
-| `.typenbash.json` | Project name and output-directory setting |
-| `.typenbash-notebook.json` | Analysis steps and missing-value definitions |
+| `.wrtx` | Manuscript File (the actual word processor) |
+| `.wrstatx` | Analysis, datasets, and output |
 
-Opening an ordinary folder does not require adding project metadata. Notebook steps are saved, while results are recalculated on demand. Export a Markdown report to preserve a result.
+Notebook steps are saved, while results are recalculated on demand. Export an analysis output as a WriterTex document file and from there a formatted Word Doc or PDF.
 
-**TypeNBash ensures a scope-limited, sandboxed** workflow for any features that involve writing directories and repositories. Agentic workflows are fully restricted to working directories, with you having complete control over permissions.
+**WriterTex ensures a scope-limited, sandboxed** workflow for all features and will only interact with external `.bib` and `.csv` files you intend to link with the active manuscript/analyses notebook. Your CSV imports are copied to ensure any changes made in WriterTex do not overwrite the original dataset .
 
-The developer or a back-end server (which doesn't exist!) can't access any of your in-app credentials, including GitHub access. Your LLM agents, keys, passwords in the app-browser, and files are fully scoped to your device and/or repository of choosing. 
->[!CAUTION]
->**TypeNBash** AppStore version coming soon will inherently lack `home/freemode` workflows due to sandboxing mandates. This will also limit your ability to perform Terminal commands outside your project repository. If full access and Terminal freedom are what you seek, please download the DMG version, or work on remote SSH hosts.
+The developer can't access any of your in-app credentials and files are fully scoped to your device and/or locations of choosing. 
 
 <a id="feedback"></a>
 
 ## Feedback
-Found a problem? Include your **TypeNBash version**, **macOS version**, whether you’re working **locally or over SSH**, and the steps to reproduce it. For CSV or editor issues, a small sample file helps—remove private information before sharing. Report the aforementioned bugs and issues within either:
+Found a problem? Include your **WriterTex version**, **macOS version**, and the steps to reproduce a bug. For CSV or editor issues, a small sample file helps—remove private information before sharing. Report the aforementioned bugs and issues within either:
 - The repositories Discussions & Issues page.
 - Contact the developer directly via email at: vd@vadesai.com
 
 <a id="acknowledgements"></a>
 
 ## License
-The source code for TypeNBash is licensed under the terms of the Affero General Public License v3.0 (GNU, 2007). The notarized TypeNBash.app and its image bundle resources are licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. See [LICENSE](https://github.com/va-desai-dev/TypeNBash?tab=License-1-ov-file) for details.
-### Acknowledgements
-TypeNBash includes third-party source code and frameworks. A comprehensive list of the third-party sources and their associated authors are listed in [THIRDPARTYNOTICES.md](THIRDPARTYNOTICES.md)
+The source code for WriterTex is licensed under the terms of the Educational Community License, Version 2.0. The notarizedn image bundle, application's creative brand assets are licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. The Mac App Store release version is licensed under Apple's Standard EULA. See [LICENSE](/LICENSE.md) for details.
 <div align="center">
-  <sub>TypeNBash © 2026 by Vedant A. Desai · Built for macOS</sub>
+  <sub>WriterTex © 2026 by Vedant A. Desai · Built for macOS</sub>
 </div>

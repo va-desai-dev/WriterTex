@@ -47,6 +47,11 @@
 		000000000000000000000120 /* WriterTex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WriterTex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000400000001 /* WriterTexCiteTex.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WriterTexCiteTex.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2B269930A2469400F94E7A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7C2B269C30A248E700F94E7A /* AGENTS.override.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.override.md; sourceTree = SOURCE_ROOT; };
+		7C2B269D30A248E700F94E7A /* ARCHITECTURE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ARCHITECTURE.md; sourceTree = SOURCE_ROOT; };
+		7C2B269E30A248E700F94E7A /* CSV_ANALYSIS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CSV_ANALYSIS.md; sourceTree = SOURCE_ROOT; };
+		7C2B269F30A248E700F94E7A /* DOCUMENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DOCUMENTS.md; sourceTree = SOURCE_ROOT; };
+		7C2B26A030A248E700F94E7A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		7C8C8CC530A04D25006F0A12 /* WriterTexPreview.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WriterTexPreview.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8C8CC730A04D25006F0A12 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -163,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				7C2B269930A2469400F94E7A /* .gitignore */,
+				7C2B269B30A248D900F94E7A /* DOCCS */,
 				7C9E416630993AF8008E99C2 /* AnxcillaryResources */,
 				000000000000000000000010 /* WriterTex */,
 				000000000000000400000002 /* WriterTexCiteTex */,
@@ -180,6 +186,18 @@
 				7C8C8CC530A04D25006F0A12 /* WriterTexPreview.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7C2B269B30A248D900F94E7A /* DOCCS */ = {
+			isa = PBXGroup;
+			children = (
+				7C2B269C30A248E700F94E7A /* AGENTS.override.md */,
+				7C2B269D30A248E700F94E7A /* ARCHITECTURE.md */,
+				7C2B269E30A248E700F94E7A /* CSV_ANALYSIS.md */,
+				7C2B269F30A248E700F94E7A /* DOCUMENTS.md */,
+				7C2B26A030A248E700F94E7A /* README.md */,
+			);
+			path = DOCCS;
 			sourceTree = "<group>";
 		};
 		7C8C8CC630A04D25006F0A12 /* Frameworks */ = {
