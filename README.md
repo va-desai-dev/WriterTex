@@ -15,9 +15,8 @@
 </p>
 
 <span align="center">
-<img src="https://img.shields.io/badge/macOS-26%20Tahoe%2B-151515?style=flat-square&amp;logo=apple&amp;logoColor=white" alt="Requires macOS 26 Tahoe or later">
+<img alt="Static Badge" src="https://img.shields.io/badge/macOS-15%20Sequoia%2B-151515?style=flat&logo=apple&logoColor=white" alt="Requires macOS 15 or later">
 <img src="https://img.shields.io/badge/Architecture-Apple%20silicon%20%2B%20Intel-B8975E?style=flat-square" alt="Apple silicon and Intel">
-<img src="https://img.shields.io/badge/Distribution-DMG-151515?style=flat-square" alt="DMG distribution">
 </span>
 </div>
 
